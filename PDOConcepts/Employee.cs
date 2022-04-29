@@ -1,6 +1,6 @@
 namespace ConcepsPDO
 {
-    public abstract class Employee
+    public abstract class Employee : IPay
     {
         public int Id { get; set; }
 
