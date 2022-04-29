@@ -2,11 +2,16 @@
 
 Console.WriteLine("PDO Concepts!");
 
-try
+Employee employee1 = new CommissionEmployee()
 {
-    Console.WriteLine(new Date(2024, 2, 29));
-    Console.WriteLine(new Date(2022, 3, 11));
-    Console.WriteLine(new Date(2022, 11, 31));
-}  catch (Exception error){
-    Console.WriteLine(error.Message);
-}
+    Id = 121,
+    FirstName = "John",
+    LastName = "Doe",
+    BirthDate = new Date(1990, 1, 1),
+    HiringDate = new Date(2018, 1, 1),
+    IsActive = true,
+    CommissionPercentaje = 0.03f,
+    Sales = 1000
+};
+
+Console.WriteLine("Employee 1:" + employee1);
